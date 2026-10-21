@@ -1,0 +1,52 @@
+<section id="symbolic">
+  <div class="wrap">
+    <div class="eyebrow">Symbolic relativity</div>
+    <h2>Curvature, derived exactly</h2>
+    <p class="sub">Build a metric, then get Christoffel symbols, Riemann, Ricci, Einstein and Weyl tensors as SymPy expressions you can simplify, differentiate and lambdify.</p>
+    <div class="sym-grid">
+      <div class="codecard">
+        <div class="codebar"><span class="dot" style="background:#ff5f57"></span><span class="dot" style="background:#febc2e"></span><span class="dot" style="background:#28c840"></span>&nbsp; symbolic.py</div>
+<pre><span class="k">from</span> sympy <span class="k">import</span> simplify
+<span class="k">from</span> einsteinpy.symbolic <span class="k">import</span> (
+    Schwarzschild, ChristoffelSymbols,
+    RicciTensor, RicciScalar, EinsteinTensor,
+)
+
+m = <span class="f">Schwarzschild</span>()            <span class="c"># predefined metric</span>
+
+ch = ChristoffelSymbols.<span class="f">from_metric</span>(m)
+<span class="f">simplify</span>(ch[<span class="n">0</span>, <span class="n">0</span>, <span class="n">1</span>])   <span class="c"># r_s / (2*r*(r - r_s))</span>
+<span class="f">simplify</span>(ch[<span class="n">1</span>, <span class="n">2</span>, <span class="n">2</span>])   <span class="c"># -r + r_s</span>
+<span class="f">simplify</span>(ch[<span class="n">2</span>, <span class="n">3</span>, <span class="n">3</span>])   <span class="c"># -sin(2*theta)/2</span>
+
+ricci = RicciTensor.<span class="f">from_metric</span>(m)       <span class="c"># every component -> 0</span>
+R     = RicciScalar.<span class="f">from_metric</span>(m)       <span class="c"># -> 0</span>
+G     = EinsteinTensor.<span class="f">from_metric</span>(m)    <span class="c"># -> 0 (vacuum)</span></pre>
+      </div>
+      <div class="result">
+        <div class="bar"><span>output · rendered from SymPy</span><em>Schwarzschild</em></div>
+        <div class="rows">
+          <div class="row"><small>Metric</small><div class="tex" data-tex="g_{\mu\nu}=\begin{pmatrix}1-\frac{r_s}{r}&0&0&0\\0&-\frac{1}{c^{2}\left(1-\frac{r_s}{r}\right)}&0&0\\0&0&-\frac{r^{2}}{c^{2}}&0\\0&0&0&-\frac{r^{2}\sin^{2}\theta}{c^{2}}\end{pmatrix}"></div></div>
+          <div class="row"><small>Christoffel symbols</small>
+            <div class="tex" data-tex="\Gamma^{t}{}_{tr}=\frac{r_s}{2r\,(r-r_s)}"></div>
+            <div class="tex" data-tex="\Gamma^{r}{}_{\theta\theta}=-r+r_s"></div>
+            <div class="tex" data-tex="\Gamma^{\theta}{}_{\phi\phi}=-\tfrac{1}{2}\sin 2\theta"></div>
+          </div>
+          <div class="row"><small>Riemann curvature</small>
+            <div class="tex" data-tex="R^{t}{}_{rtr}=\frac{r_s}{r^{2}\,(r-r_s)}"></div>
+          </div>
+          <div class="row"><small>Vacuum check</small>
+            <div class="check"><span class="tex" data-tex="R_{\mu\nu}=0"></span><span class="tex" data-tex="R=0"></span><span class="tex" data-tex="G_{\mu\nu}=0"></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sym-chips">
+      <h6>Predefined metrics</h6>
+      <div class="metrics"><span class="chip">Schwarzschild</span><span class="chip">Kerr</span><span class="chip">Kerr-Newman</span><span class="chip">Reissner-Nordström</span><span class="chip">de Sitter</span><span class="chip">Gödel</span><span class="chip">Alcubierre warp</span><span class="chip">…and custom metrics</span></div>
+      <h6>Tensors</h6>
+      <div class="metrics"><span class="chip">Christoffel</span><span class="chip">Riemann</span><span class="chip">Ricci</span><span class="chip">Einstein</span><span class="chip">Weyl</span><span class="chip">Schouten</span><span class="chip">Stress-energy</span></div>
+    </div>
+    <p style="margin:26px 0 0"><a class="btn" href="https://docs.einsteinpy.com/en/latest/jupyter.html">Browse the symbolic notebooks →</a></p>
+  </div>
+</section>

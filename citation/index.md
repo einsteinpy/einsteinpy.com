@@ -8,7 +8,7 @@ To cite EinsteinPy in publications, use:
 
 ```
 The EinsteinPy Project ({{ site.time | date: '%Y' }}). EinsteinPy: Python library for General Relativity
-URL https://einsteinpy.org
+URL https://einsteinpy.com
 ```
 
 A [BibTeX](http://www.bibtex.org) entry for [LaTeX](https://www.latex-project.org) users is:
@@ -19,7 +19,7 @@ A [BibTeX](http://www.bibtex.org) entry for [LaTeX](https://www.latex-project.or
 title = {EinsteinPy: Python library for General Relativity},{% raw %}
 author = {{EinsteinPy Development Team}},
 year = {{% endraw %}{{ site.time | date: '%Y' }}{% raw %}}{% endraw %},
-url = {https:/einsteinpy.org/},
+url = {https://einsteinpy.com/},
 }
 ```
 

@@ -1,11 +1,24 @@
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>{{ page.title }}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.url == '/' %}EinsteinPy · General Relativity in Python{% else %}{{ page.title }} · EinsteinPy{% endif %}</title>
+<meta name="description" content="EinsteinPy is an open-source Python library for general relativity: geodesics, symbolic tensors and visualisation for Schwarzschild, Kerr and Kerr-Newman spacetimes.">
 <meta name="author" content="Shreyas Bapat" />
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="theme-color" content="#070b17">
+<link rel="icon" href="/favicon.ico">
 
-<link href="https://fonts.googleapis.com/css?family=Lato|Work+Sans:400,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/bootstrap.min.css" />
-<link rel="stylesheet" href="/css/main.css" />
-<link rel="stylesheet" href="/css/syntax.css" />
+<!-- apply the saved / system colour scheme before first paint -->
+<script>
+  (function () {
+    var t = null;
+    try { t = localStorage.getItem('theme'); } catch (e) {}
+    if (!t && window.matchMedia && matchMedia('(prefers-color-scheme: light)').matches) t = 'light';
+    if (t) document.documentElement.setAttribute('data-theme', t);
+  })();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<link rel="stylesheet" href="/css/site.css" />

@@ -1,5 +1,6 @@
 ---
-description: Symbolic Calculation Support
+description: Symbolic calculation
+icon: sigma
 order: 2
 ---
-EinsteinPy provides and amazing support for sympy based symbolic calculation of various tensors and their operations!
+SymPy-based tensors and operations: Christoffel symbols, Riemann, Ricci, Einstein, Weyl and more.

@@ -1,5 +1,6 @@
 ---
-description: Coordinate System
+description: Coordinate systems
+icon: globe
 order: 4
 ---
-You don't get confused between what coordinate system to use! EinsteinPy handles coordinates smoothly!
+No more guessing which coordinates to use — EinsteinPy converts between them smoothly.

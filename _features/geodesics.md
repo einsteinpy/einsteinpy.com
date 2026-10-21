@@ -1,5 +1,6 @@
 ---
-description: Geodesic Trajectories
+description: Geodesic trajectories
+icon: geodesic
 order: 0
 ---
-EinsteinPy makes it very simple to calculate geodesic trajectories in Schwarzschild, Kerr and Kerr Newman Geometries! 
+Calculate geodesic trajectories in Schwarzschild, Kerr and Kerr-Newman geometries with a few lines of code.

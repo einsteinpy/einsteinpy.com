@@ -1,49 +1,19 @@
 <!-- main menu -->
-<div class="container py-3 py-lg-0">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="main-menu">
-
-    <a class="navbar-brand" href="/" id="logo">
-      <img src="/img/wordmark.png" height="50" width="132" />
-    </a>
-
-    <button class="navbar-toggler ml-auto hidden-sm-up float-xs-left" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarContent">
-      <ul class="navbar-nav mr-auto">
-
-        <li class="nav-item flex-md-fill text-md-center">
-          <a class="nav-link" href="//docs.einsteinpy.com/en/latest">Documentation</a>
-        </li>
-
-        <li class="nav-item flex-md-fill text-md-center">
-          <a class="nav-link" href="//riot.im/app/#/room/#einsteinpy:matrix.org">Community</a>
-        </li>
-
-        <li class="nav-item flex-md-fill text-md-center">
-          <a class="nav-link" href="//mybinder.org/v2/gh/einsteinpy/einsteinpy/main?filepath=docs/source/examples/index.ipynb">Tutorials</a>
-        </li>
-
-        <!-- <li class="nav-item flex-md-fill text-md-center">
-          <a class="nav-link" href="//demo.bokeh.org">Demos</a>
-        </li> -->
-
-        <li class="nav-item flex-md-fill text-md-center">
-          <a class="nav-link" href="//blog.einsteinpy.com">Blog</a>
-        </li>
-
-        <li class="nav-item flex-md-fill text-md-center">
-            <a class="nav-link" href="//github.com/einsteinpy/einsteinpy">GitHub</a>
-        </li>
-
-        <li class="nav-item flex-md-fill text-md-center donate">
-          <a class="btn btn-primary" href="//www.paypal.me/shreyasbapat">Donate</a>
-        </li>
-
-      </ul>
+<nav id="main-menu" aria-label="Main">
+  <div class="wrap nav">
+    <a class="brand" href="/"><img src="/img/logo-mark.png" alt="" width="36" height="36"><span>Einstein<span class="py">Py</span></span></a>
+    <div class="links">
+      <a href="https://docs.einsteinpy.com/en/latest">Documentation</a>
+      <a href="https://riot.im/app/#/room/#einsteinpy:matrix.org">Community</a>
+      <a href="https://docs.einsteinpy.com/en/latest/user_guide.html">Tutorials</a>
+      <a href="https://mybinder.org/v2/gh/einsteinpy/einsteinpy/main?filepath=docs/source/examples/index.ipynb">Demos</a>
+      <a href="https://blog.einsteinpy.com">Blog</a>
     </div>
-
-  </nav>
-</div>
+    <div class="spacer"></div>
+    <button class="btn icon-btn menu" id="menu" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <button class="btn icon-btn" id="theme" aria-label="Toggle light / dark theme" title="Toggle theme">◐</button>
+    <a class="btn gh" href="https://github.com/einsteinpy/einsteinpy">★ Star on GitHub</a>
+    <a class="btn primary" href="https://docs.einsteinpy.com">Get started</a>
+  </div>
+</nav>
 <!-- end main menu -->
