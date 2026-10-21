@@ -1,6 +1,6 @@
 # EinsteinPy Main Site
 
-This is the GitHub repository for the EinsteinPy Project Main Site, [einsteinpy.org](https://einsteinpy.org). The Main Site is a portal to guide users to other project resources and sites. The repository for the source code of EinsteinPy itself can be found at [github.com/einsteinpy/einsteinpy](https://github.com/einsteinpy/einsteinpy).
+This is the GitHub repository for the EinsteinPy Project Main Site, [einsteinpy.com](https://einsteinpy.com). The Main Site is a portal to guide users to other project resources and sites. The repository for the source code of EinsteinPy itself can be found at [github.com/einsteinpy/einsteinpy](https://github.com/einsteinpy/einsteinpy).
 
 Full docs for setting up a GitHub Pages Jekyll blog [can be found here](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll).
 

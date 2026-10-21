@@ -1,5 +1,6 @@
 ---
 description: Productive
+icon: bolt
 order: 3
 ---
-Work in Python close to all the Scientific Python tools (Astropy, Numpy etc.) you are already familiar with.
+Work close to the scientific Python tools you already know — Astropy, NumPy and friends.

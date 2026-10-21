@@ -1,5 +1,6 @@
 ---
-description: Open Source
+description: Open source
+icon: github
 order: 5
 ---
-Everything, including the core module, plotting, symbolic module is MIT licensed and available on [GitHub](//github.com/einsteinpy/einsteinpy).
+Core, plotting and symbolic modules are MIT licensed and developed in the open on [GitHub](//github.com/einsteinpy/einsteinpy).

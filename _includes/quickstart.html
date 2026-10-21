@@ -1,0 +1,34 @@
+<section id="start">
+  <div class="wrap">
+    <div class="eyebrow">From idea to trajectory</div>
+    <h2>A few lines from equations to a plot</h2>
+    <p class="sub">Define the initial conditions, pick a metric and let EinsteinPy integrate the geodesic.</p>
+    <div class="code-split">
+      <div class="codecard">
+        <div class="codebar"><span class="dot" style="background:#ff5f57"></span><span class="dot" style="background:#febc2e"></span><span class="dot" style="background:#28c840"></span>&nbsp; geodesic.py</div>
+<pre><span class="k">import</span> numpy <span class="k">as</span> np
+<span class="k">from</span> einsteinpy.geodesic <span class="k">import</span> Timelike
+<span class="k">from</span> einsteinpy.plotting.geodesic <span class="k">import</span> StaticGeodesicPlotter
+
+geod = <span class="f">Timelike</span>(
+    metric=<span class="s">"Schwarzschild"</span>,
+    metric_params=(<span class="n">0.</span>,),
+    position=[<span class="n">40.</span>, np.pi / <span class="n">2</span>, <span class="n">0.</span>],
+    momentum=[<span class="n">0.</span>, <span class="n">0.</span>, <span class="n">3.83405</span>],
+    steps=<span class="n">5500</span>,
+    delta=<span class="n">1</span>,
+    return_cartesian=<span class="k">True</span>,
+)
+
+plotter = <span class="f">StaticGeodesicPlotter</span>()
+plotter.<span class="f">plot</span>(geod)
+plotter.<span class="f">show</span>()</pre>
+      </div>
+      <div class="points">
+        <div class="point"><i>1</i><div><h4>Pick a spacetime</h4><p>Schwarzschild, Kerr or Kerr-Newman — or bring your own metric.</p></div></div>
+        <div class="point"><i>2</i><div><h4>Integrate</h4><p>Timelike and null geodesics with higher-order integrators, accelerated by Numba.</p></div></div>
+        <div class="point"><i>3</i><div><h4>Visualise</h4><p>Static, interactive and animated plots that make Einstein's ideas visible.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>

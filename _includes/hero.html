@@ -1,23 +1,21 @@
 <!-- hero -->
-<div class="container">
-  <div class="hero" id="hero">
-    <div class="container">
-      <h1 class="display-5 hero-heading">
-        The EinsteinPy Project
-      </h1>
-      <br>
-      <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-4"></div>
-        <div class="col-lg-4 col-md-6 col-sm-4">
-          <a class="btn btn-success btn-lg btn-block" href="https://docs.einsteinpy.com" role="button">Documentation</a>
-        <br>
-        </div>
-        <div class="col-4 col-md-4 col-sm-4"></div>
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <a class="pill" href="https://github.com/einsteinpy/einsteinpy/releases/tag/v0.5.0"><b>New</b> EinsteinPy 0.5.0 — Python 3.10 to 3.15 →</a>
+      <h1>General relativity,<br><span>in plain Python.</span></h1>
+      <p class="lead">Compute geodesics, manipulate tensors symbolically and visualise curved spacetime — in Schwarzschild, Kerr and Kerr-Newman geometries, right next to NumPy, SciPy and Astropy.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://docs.einsteinpy.com">Read the docs</a>
+        <a class="btn" href="https://mybinder.org/v2/gh/einsteinpy/einsteinpy/main?filepath=docs/source/examples/index.ipynb">▶ Try it in your browser</a>
       </div>
-      <div clsss="row">
-        <a class="github-button" href="https://github.com/einsteinpy/einsteinpy" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star einsteinpy/einsteinpy on GitHub">Star</a>
-      </div>
+      <div class="install mono"><span><span class="prompt">$</span> pip install einsteinpy</span><button class="copy" data-copy="pip install einsteinpy">copy</button></div>
+      <div class="meta"><span>MIT licensed</span><span>Python 3.10 – 3.15</span><span>Built on Astropy, NumPy &amp; SymPy</span></div>
+    </div>
+    <div class="stage">
+      <canvas id="space" width="900" height="740" aria-label="Diagram of an orbit around a Schwarzschild black hole whose periapsis advances every orbit"></canvas>
+      <div class="tag">Schwarzschild geodesic · periapsis advance</div>
     </div>
   </div>
-</div>
+</header>
 <!-- end hero -->
